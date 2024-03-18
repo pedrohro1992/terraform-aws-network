@@ -3,6 +3,8 @@ module "network" {
 
   cluster_name = "cacetinho-empresa-us-east-1"
 
+  eks_cluster_name = "cacetinho-sa-eks"
+
   vpc_cidr = "10.0.0.0/16"
 
   public_subnets = [

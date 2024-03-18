@@ -3,6 +3,12 @@ variable "cluster_name" {
   type        = string
   description = "Name of the cluster"
 }
+
+variable "eks_cluster_name" {
+  type        = string
+  description = "Name of the cluster that will run on the vpc"
+
+}
 ## Network variables 
 
 variable "vpc_cidr" {
