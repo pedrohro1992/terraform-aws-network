@@ -16,8 +16,6 @@ variable "vpc_cidr" {
   description = "CIDR Block to put on the vpc"
 }
 
-
-
 variable "public_subnets" {
   type        = list(string)
   description = "CIDR Block to put on the public subnets"
@@ -28,3 +26,14 @@ variable "private_subnets" {
   description = "CIDR to put on the private subnetes"
 }
 
+# Route 53 Variables
+
+variable "private_zone" {
+  type        = string
+  description = "Set the Route 53 private zone domain"
+}
+
+variable "public_zone" {
+  type        = string
+  description = "Set the Route 53 public zone domain"
+}

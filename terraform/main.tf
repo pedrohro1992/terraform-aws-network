@@ -19,4 +19,7 @@ module "network" {
     "10.0.12.0/24"
   ]
 
+  public_zone = "cacetinho.app.br"
+
+  private_zone = "cacetinho.internal.com"
 }
