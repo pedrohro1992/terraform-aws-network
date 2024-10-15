@@ -1,9 +1,9 @@
 module "network" {
   source = "../modules"
 
-  cluster_name = "cacetinho-empresa-us-east-1"
+  cluster_name = "development-vpc"
 
-  eks_cluster_name = "cacetinho-sa-eks"
+  eks_cluster_name = "development-eks"
 
   vpc_cidr = "10.0.0.0/16"
 
@@ -19,7 +19,4 @@ module "network" {
     "10.0.12.0/24"
   ]
 
-  public_zone = "cacetinho.app.br"
-
-  private_zone = "cacetinho.internal.com"
 }
