@@ -28,12 +28,27 @@ variable "private_subnets" {
 
 # Route 53 Variables
 
+variable "create_private_zone" {
+  type        = bool
+  description = "Define the criaton of a private zone"
+  default     = false
+}
+
 variable "private_zone" {
   type        = string
   description = "Set the Route 53 private zone domain"
+  default     = ""
+}
+
+variable "create_public_zone" {
+  type        = bool
+  description = "Define the criaton of a publiuc zone"
+  default     = false
 }
 
 variable "public_zone" {
   type        = string
   description = "Set the Route 53 public zone domain"
+  default     = ""
+
 }
